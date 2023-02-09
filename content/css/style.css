@@ -207,17 +207,34 @@ body {
 }
 
 .subtitle {
-  font-size: 4.4rem;
+  font-size: 3.6rem;
   color: #f16615;
   font-weight: 700;
+  margin-bottom: 9.6rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 9.6rem 3.2rem;
 }
 
 .grid {
   display: grid;
+  max-width: 120rem;
   column-gap: 6.4rem;
   row-gap: 9.6rem;
 }
 
 .grid--2-cols {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+}
+
+.event-description {
+  font-size: 2.4rem;
+  color: #333;
+}
+
+.event-img {
+  max-width: 100%;
 }

@@ -136,6 +136,7 @@ body {
   padding: 0 3.2rem;
   border: none;
 }
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -145,6 +146,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .hero-description {
   font-size: 2.4rem;
   line-height: 1.6;
@@ -202,4 +204,20 @@ body {
 
 .hero-img {
   width: 100%;
+}
+
+.subtitle {
+  font-size: 4.4rem;
+  color: #f16615;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
 }

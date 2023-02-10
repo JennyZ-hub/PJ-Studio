@@ -230,11 +230,20 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 .event-description {
   font-size: 2.4rem;
   color: #333;
   display: flex;
   align-items: center;
+}
+
+.el-list {
+  display: flex;
+  gap: 2rem;
 }
 
 .event-img {
@@ -245,13 +254,32 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: 1rem;
   color: #706262;
+  line-height: 1.2;
 }
 
 .icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #f16615;
-  margin-right: 2rem;
+}
+
+.class-type {
+  color: #eb7632;
+  transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+}
+
+.class-price {
+  color: #333;
+  font-size: 3.6rem;
+  font-weight: 700;
+  margin-bottom: 3.6rem;
+}
+
+.price-description {
+  color: #706262;
 }

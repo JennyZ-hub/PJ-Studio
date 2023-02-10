@@ -238,3 +238,16 @@ body {
 .event-img {
   max-width: 100%;
 }
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #f16615;
+}

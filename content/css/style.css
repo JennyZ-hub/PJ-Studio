@@ -325,3 +325,19 @@ body {
 .price-button {
   text-align: center;
 }
+
+.section-form {
+  background: #f16615;
+  padding: 0 3.2rem;
+}
+
+.form-title {
+  font-size: 3.6rem;
+  color: #fff;
+  font-weight: 700;
+  margin: 3.2rem 0;
+}
+
+.form-description {
+  font-size: 1.8rem;
+}

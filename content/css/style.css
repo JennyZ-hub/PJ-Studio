@@ -291,10 +291,13 @@ body {
 
 .class-card {
   border: 1px solid #cc530d;
+  translate: all 0.3s;
+}
+.best-value {
 }
 
 .class-card:hover {
-  box-shadow: 0px 0px;
+  box-shadow: 0px 0px 36px #e7e4e4;
 }
 
 .one-class {

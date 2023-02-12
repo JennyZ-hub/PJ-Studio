@@ -356,20 +356,22 @@ body {
 
 .form {
   padding: 3.2rem;
+  background-color: #f16615;
 }
 
 .form-col {
+  display: grid;
+  max-width: 120rem;
   grid-template-columns: 2fr 1fr;
-  background-color: #f16615;
 }
 
 .form-img {
   background-image: linear-gradient(
       to right bottom,
-      rgba(241, 102, 21, 0.486),
-      rgba(197, 79, 10, 0.438)
+      rgba(241, 102, 21, 0.205),
+      rgba(197, 79, 10, 0.199)
     ),
     url(img/form/form.jpg);
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }

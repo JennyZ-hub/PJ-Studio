@@ -427,7 +427,32 @@ body {
 
 .studio-footer {
   background-color: #f16615;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4.8rem;
+  padding: 3.2rem 2.4rem;
+}
+
+.footer-detail {
+  font-size: 1.6rem;
+  color: #494747;
+  margin-bottom: 12px;
+}
+
+.footer-list {
+  font-size: 1.2rem;
+  font-style: inherit;
+  color: #494747;
+  line-height: 1.2;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  padding: 3.2rem 3.2rem 3.2rem 9.6rem;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.list-el {
+  text-decoration: none;
 }

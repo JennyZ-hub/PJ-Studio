@@ -71,7 +71,12 @@ body {
   color: #fff;
 }
 
-.omnifood-header {
+.logo {
+  height: 6.4rem;
+  align-self: center;
+}
+
+.studio-header {
   background-color: #f16615;
   display: flex;
   justify-content: space-between;
@@ -379,13 +384,14 @@ body {
 
 .form-container input:focus {
   outline: none;
-  box-shadow: 0 0 0 2px rgba(146, 144, 144, 0.993);
+  box-shadow: 0 0 0 3px rgba(156, 132, 132, 0.993);
 }
 
 .form-col {
   display: grid;
   max-width: 120rem;
   grid-template-columns: 2fr 1fr;
+  box-shadow: 0 0 2px #dbdada;
 }
 
 .form-img {
@@ -417,4 +423,11 @@ body {
 
 .submit {
   text-align: center;
+}
+
+.studio-footer {
+  background-color: #f16615;
+  display: flex;
+  justify-content: space-between;
+  padding: 3.2rem 3.2rem 3.2rem 9.6rem;
 }

@@ -123,6 +123,7 @@ body {
 .logo {
   height: 2.2rem;
 }
+
 .title {
   font-size: 5.2rem;
   line-height: 1.05;
@@ -206,11 +207,21 @@ body {
 }
 
 .subtitle {
+  display: inline-block;
   font-size: 1.8rem;
   text-transform: uppercase;
   color: #f16615;
   font-weight: 700;
-  margin-bottom: 9.6rem;
+  margin-bottom: 2.4rem;
+}
+
+.header-secondary {
+  font-size: 3.2rem;
+  margin-bottom: 6.4rem;
+}
+
+.event-header {
+  color: #f16615;
 }
 
 .container {
@@ -250,6 +261,10 @@ body {
   max-width: 100%;
 }
 
+.testimonial-header {
+  color: #333;
+}
+
 .list {
   list-style: none;
   display: flex;
@@ -285,6 +300,10 @@ body {
 .price-description {
   color: #706262;
   font-size: 1.8rem;
+}
+
+.price-header {
+  color: #f16615;
 }
 
 .img-price {

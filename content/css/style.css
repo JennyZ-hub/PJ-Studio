@@ -206,7 +206,8 @@ body {
 }
 
 .subtitle {
-  font-size: 3.6rem;
+  font-size: 1.8rem;
+  text-transform: uppercase;
   color: #f16615;
   font-weight: 700;
   margin-bottom: 9.6rem;
@@ -455,4 +456,19 @@ body {
 
 .list-el {
   text-decoration: none;
+}
+
+.testimonials {
+  background-color: #f16615;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.testimonials-description {
+  color: #333;
+  font-size: 2.4rem;
+}
+
+.testimonial-subtitle {
+  color: #333;
 }

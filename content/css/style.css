@@ -227,7 +227,7 @@ body {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 7.4rem 3.2rem;
+  padding: 9.6rem 3.2rem;
 }
 
 .grid {
@@ -310,7 +310,7 @@ body {
 .testimonials-screenshot {
   display: flex;
   align-items: center;
-
+  justify-content: center;
   gap: 1.2rem;
 }
 

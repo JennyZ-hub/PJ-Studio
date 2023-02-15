@@ -8,16 +8,11 @@ const sectionEvents = document.querySelector('.section-events');
 const sectionTestimonials = document.querySelector('.section-testimonials');
 const sectionPrice = document.querySelector('.section-price');
 const sectionBooking = document.querySelector('.section-form');
-navUpcomingEvent.addEventListener('click', function (e) {
-  sectionEvents.scrollIntoView({ behavior: 'smooth' });
-});
-navTestimonials.addEventListener('click', function (e) {
-  console.log(sectionTestimonials);
-  sectionTestimonials.scrollIntoView({ behavior: 'smooth' });
-});
-navPricing.addEventListener('click', function (e) {
-  sectionPrice.scrollIntoView({ behavior: 'smooth' });
-});
-navBook.addEventListener('click', function (e) {
-  sectionBooking.scrollIntoView({ behavior: 'smooth' });
+
+document.querySelector('.nav-list').addEventListener('click', function (e) {
+  if (e.target.classList.contains('nav-link')) {
+    e.preventDefault();
+    const id = e.target.getAttribute('href');
+    document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+  }
 });

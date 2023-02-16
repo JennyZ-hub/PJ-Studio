@@ -20,6 +20,33 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
   }
 });
 
-slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+let curSlide = 0;
 
-btnLeft.addEventListener('click', function (e) {});
+const goToslide = function (slide) {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+goToslide(0);
+
+const nextSlide = function () {
+  if (curSlide === 2) {
+    curSlide = 0;
+  } else {
+    curSlide++;
+  }
+  goToslide(curSlide);
+};
+btnRight.addEventListener('click', nextSlide);
+
+const previousSlide = function () {
+  if (curSlide === 0) {
+    curSlide = 2;
+  } else {
+    curSlide--;
+  }
+  goToslide(curSlide);
+};
+
+btnLeft.addEventListener('click', previousSlide);

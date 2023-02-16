@@ -124,12 +124,28 @@ body {
   height: 2.2rem;
 }
 
-.title {
+.header-first {
   font-size: 5.2rem;
   line-height: 1.05;
   margin-bottom: 3.2rem;
   letter-spacing: -1px;
 }
+
+.subtitle {
+  display: inline-block;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #f16615;
+  font-weight: 700;
+  margin-bottom: 2.4rem;
+}
+
+.header-secondary {
+  font-size: 4.4rem;
+  margin-bottom: 6.4rem;
+}
+
+/*--Section hero--*/
 
 .section-hero {
   background: #f16615;
@@ -174,7 +190,7 @@ body {
 
 .btn--book:link,
 .btn--book:visited {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   background-color: #cc530d;
   color: #fff;
 }
@@ -187,7 +203,7 @@ body {
 
 .btn--info:link,
 .btn--info:visited {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   background-color: #e7dcdc;
   color: #333;
 }
@@ -204,20 +220,6 @@ body {
 
 .hero-img {
   width: 100%;
-}
-
-.subtitle {
-  display: inline-block;
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  color: #f16615;
-  font-weight: 700;
-  margin-bottom: 2.4rem;
-}
-
-.header-secondary {
-  font-size: 3.2rem;
-  margin-bottom: 6.4rem;
 }
 
 .event-header {

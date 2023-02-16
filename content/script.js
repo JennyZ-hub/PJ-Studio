@@ -8,6 +8,9 @@ const sectionEvents = document.querySelector('.section-events');
 const sectionTestimonials = document.querySelector('.section-testimonials');
 const sectionPrice = document.querySelector('.section-price');
 const sectionBooking = document.querySelector('.section-form');
+const slides = document.querySelectorAll('.slide');
+const btnLeft = document.querySelector('.btn--left');
+const btnRight = document.querySelector('.btn--right');
 
 document.querySelector('.nav-list').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav-link')) {
@@ -16,3 +19,7 @@ document.querySelector('.nav-list').addEventListener('click', function (e) {
     document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
   }
 });
+
+slides.forEach((s, i) => (s.style.transform = `translateX(${100 * i}%)`));
+
+btnLeft.addEventListener('click', function (e) {});

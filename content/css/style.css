@@ -322,6 +322,7 @@ body {
   max-width: 100%;
   padding-top: 200%;
   position: relative;
+  overflow: hidden;
 }
 
 .slide {

@@ -11,6 +11,7 @@ const sectionBooking = document.querySelector('.section-form');
 const slides = document.querySelectorAll('.slide');
 const btnLeft = document.querySelector('.btn--left');
 const btnRight = document.querySelector('.btn--right');
+const dots = document.querySelector('.dots');
 
 document.querySelector('.nav-list').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav-link')) {
@@ -30,6 +31,15 @@ const goToslide = function (slide) {
 
 goToslide(0);
 
+const activateDot = function (slide) {
+  document
+    .querySelectorAll('.dot')
+    .forEach((dot) => dot.classList.remove('dot--fill'));
+  document
+    .querySelector(`.dot[data-slide="${slide}"]`)
+    .classList.add('dot--fill');
+};
+
 const nextSlide = function () {
   if (curSlide === 2) {
     curSlide = 0;
@@ -37,6 +47,7 @@ const nextSlide = function () {
     curSlide++;
   }
   goToslide(curSlide);
+  activateDot(curSlide);
 };
 btnRight.addEventListener('click', nextSlide);
 
@@ -47,6 +58,15 @@ const previousSlide = function () {
     curSlide--;
   }
   goToslide(curSlide);
+  activateDot(curSlide);
 };
 
 btnLeft.addEventListener('click', previousSlide);
+
+dots.addEventListener('click', function (e) {
+  if (e.target.classList.contains('dot')) {
+    const slide = e.target.dataset.slide;
+    goToslide(slide);
+    activateDot(slide);
+  }
+});

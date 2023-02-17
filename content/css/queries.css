@@ -5,3 +5,35 @@
     font-size: 56.25%;
   }
 }
+
+@media (max-width: 68em) {
+  .header-first {
+    font-size: 4.4rem;
+  }
+
+  .header-secondary {
+    font-size: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .description {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    margin-bottom: 4.8rem;
+    letter-spacing: 0.75px;
+  }
+
+  .btn--book:link,
+  .btn--book:visited {
+    font-size: 1.8rem;
+  }
+
+  .btn--info:link,
+  .btn--info:visited {
+    font-size: 1.8rem;
+  }
+
+  .btn-form {
+    font-size: 1.8rem;
+  }
+}

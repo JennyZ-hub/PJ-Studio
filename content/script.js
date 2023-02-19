@@ -15,8 +15,6 @@ const dots = document.querySelector('.dots');
 const header = document.querySelector('.studio-header');
 const menu = document.querySelector('.btn--mobile-nav');
 
-console.log(menu);
-
 document.querySelector('.nav-list').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav-link')) {
     e.preventDefault();

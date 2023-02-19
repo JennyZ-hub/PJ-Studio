@@ -45,6 +45,7 @@
 @media (max-width: 57em) {
   .btn--mobile-nav {
     display: block;
+    z-index: 999;
   }
 
   .main-nav {
@@ -58,7 +59,7 @@
     width: 100%;
     height: 100vh;
     opacity: 0;
-    transition: all 1s ease-in;
+    transition: all 0.5s ease-in;
     pointer-events: none;
     visibility: hidden;
     transform: translateX(100%);
@@ -93,4 +94,21 @@
   .nav-open .icon-mobile-nav[name='menu-outline'] {
     display: none;
   }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-img {
+    width: 50%;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+}
+
+.section-price .grid {
+  grid-template-columns: repeat(2, 1fr);
 }

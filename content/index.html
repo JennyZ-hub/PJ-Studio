@@ -24,11 +24,12 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <header class="studio-header">
+    <header class="studio-header
+    ">
       <a href="#">
         <img src="img/logo.png" alt="studio-logo" class="logo" />
       </a>
-      <nav>
+      <nav class="main-nav">
         <ul class="nav-list">
           <a href="#upcoming-events" class="nav-link nav--upcoming-events">Upcoming events</a>
           <a href="#testimonials" class="nav-link nav--testimonials">Testimonials</a>
@@ -36,6 +37,10 @@
           <a href="#booking" class="nav-link btn nav--book btn--nav">Book now</a>
         </ul>
       </nav>
+      <button class= "btn--mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav"  name="close-outline"></ion-icon>
+      </button>
     </header>
     <main>
       <section class="section-hero">
@@ -238,8 +243,6 @@
            <div class="class-card">
             <img src="img/price/price3.JPG" alt="someone painting flowers" class="img-price" />
             <div class="price-detail">
-             <header>
-              <p class="best-value">BEST VALUE</p>
                <p class="class-type">annually</p>
                <p class="class-price">$1,400</p>
                <p class="one-class">$35 per class</p>

@@ -112,3 +112,30 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 40em) {
+  .section-events .grid {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .section-price .grid {
+    grid-template-columns: 1fr;
+  }
+  .section-price .container {
+    padding: 9.6rem 9.6rem;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-img-container {
+    width: 70%;
+  }
+
+  .img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

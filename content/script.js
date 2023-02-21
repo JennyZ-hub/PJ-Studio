@@ -14,7 +14,10 @@ const btnRight = document.querySelector('.btn--right');
 const dots = document.querySelector('.dots');
 const header = document.querySelector('.studio-header');
 const menu = document.querySelector('.btn--mobile-nav');
-
+const priceBook = document.querySelectorAll('.price-button');
+const btnBook = document.querySelector('.btn--book');
+const book = document.querySelector('#booking');
+const btnInfo = document.querySelector('.btn--info');
 document.querySelector('.nav-list').addEventListener('click', function (e) {
   if (e.target.classList.contains('nav-link')) {
     e.preventDefault();
@@ -75,4 +78,23 @@ dots.addEventListener('click', function (e) {
 
 menu.addEventListener('click', function () {
   header.classList.toggle('nav-open');
+});
+
+priceBook.forEach((e) =>
+  e.addEventListener('click', function (e) {
+    e.preventDefault();
+    book.scrollIntoView({ behavior: 'smooth' });
+  })
+);
+
+btnBook.addEventListener('click', function (e) {
+  e.preventDefault();
+  book.scrollIntoView({ behavior: 'smooth' });
+});
+
+btnInfo.addEventListener('click', function (e) {
+  e.preventDefault();
+  document
+    .querySelector('#upcoming-events')
+    .scrollIntoView({ behavior: 'smooth' });
 });

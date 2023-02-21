@@ -107,8 +107,8 @@
   .hero-img-box {
     text-align: center;
   }
-}
 
-.section-price .grid {
-  grid-template-columns: repeat(2, 1fr);
+  .section-price .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

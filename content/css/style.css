@@ -181,6 +181,10 @@ body {
   row-gap: 9.6rem;
 }
 
+.grid--1-cols {
+  grid-template-columns: 1fr;
+}
+
 .grid--2-cols {
   grid-template-columns: 1fr 1fr;
 }
@@ -246,6 +250,16 @@ body {
 
 /*--Upcoming events--*/
 
+.event {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 4.8rem;
+}
+
+.event-img {
+  max-width: 100%;
+}
+
 .event-header {
   color: #f16615;
 }
@@ -259,10 +273,6 @@ body {
 .el-list {
   display: flex;
   gap: 2rem;
-}
-
-.event-img {
-  max-width: 100%;
 }
 
 /*--Testimonials--*/
@@ -533,7 +543,7 @@ body {
       rgba(197, 79, 10, 0.199)
     ),
     url('../img/form/form.jpg');
-  background-size: contain;
+  background-size: cover;
   background-position: center;
 }
 

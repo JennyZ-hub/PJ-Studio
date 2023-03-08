@@ -151,6 +151,15 @@
   .form-col {
     grid-template-columns: 1fr;
   }
+
+  .form {
+    max-width: 100%;
+  }
+
+  .form-img {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (max-width: 28em) {
@@ -163,12 +172,18 @@
   .btn--hero .btn--book {
     width: 100%;
   }
+
   .section-price .container {
     padding: 3.2rem 3.2rem;
+  }
+
+  .form-container {
+    grid-template-columns: 1fr;
   }
   .footer-container {
     grid-template-columns: 1fr 1fr;
   }
+
   .footer-link {
     grid-column: 2/3;
     grid-row: 2/3;

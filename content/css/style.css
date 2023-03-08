@@ -536,6 +536,10 @@ body {
   box-shadow: 0 0 2px #dbdada;
 }
 
+.form {
+  max-width: 100%;
+}
+
 .form-img {
   background-image: linear-gradient(
       to right bottom,

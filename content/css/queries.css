@@ -177,6 +177,10 @@
     padding: 3.2rem 3.2rem;
   }
 
+  .testimonials-img-container {
+    width: 100%;
+  }
+
   .form-container {
     grid-template-columns: 1fr;
   }

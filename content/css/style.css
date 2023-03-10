@@ -103,7 +103,6 @@ body {
 
 .nav-link:hover,
 .nav-link:active {
-  border: 2px solid #fff;
   cursor: pointer;
   background-color: #cc530d;
   border-radius: 9px;
